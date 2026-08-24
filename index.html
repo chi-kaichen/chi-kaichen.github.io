@@ -144,10 +144,31 @@
       font-size: 15px;
     }
 
-    /* 日期列间距控制类 */
+    /* 教育背景的日期列控制 */
     .date-col {
       display: inline-block;
       width: 180px;
+      font-weight: bold;
+    }
+
+    /* 针对 Honors and Awards 的 Grid 列表样式 */
+    .award-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 6px;
+      margin-bottom: 15px;
+    }
+
+    .award-list li {
+      display: grid;
+      grid-template-columns: 80px 1fr; /* 年份列宽 80px，内容列自适应 */
+      column-gap: 12px;                  /* 年份与文字之间的间距 */
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .award-year {
       font-weight: bold;
     }
 
@@ -156,7 +177,7 @@
       margin-top: 6px;
     }
 
-    /* 核心修改：设置论文列表项两端对齐 */
+    /* 论文列表项两端对齐 */
     ol li {
       margin-bottom: 12px;
       font-size: 15px;
@@ -195,7 +216,7 @@
       border-radius: 2px;
       margin-left: 4px;
       text-decoration: none;
-      display: inline-block; /* 保持角标不被不当折行切断 */
+      display: inline-block;
     }
 
     .badge:hover {
@@ -230,7 +251,7 @@
 </head>
 <body>
 
-  <!-- 头部：彻底还原 omtcyang.github.io 的姓名、机构、邮箱与照片排版 -->
+  <!-- 头部个人信息与照片排版 -->
   <div class="profile-container">
     <div class="profile-info">
       <!-- 姓名 -->
@@ -445,10 +466,21 @@
     </li>
   </ol>
 
-  <!-- 荣誉与奖项 -->
+  <!-- 荣誉与奖项（使用 CSS Grid 精准控制对齐） -->
   <h2 id="awards">Honors and Awards <a href="#" class="top-btn">[↑TOP]</a></h2>
-  <ul>
-    <li><span class="date-col">2026</span> Doctoral Student Program of the Young S&T Talents Cultivation Project, CAST (中国科协青年科技人才培育工程博士生专项计划)</li>
+  <ul class="award-list">
+    <li>
+      <span class="award-year">2026</span>
+      <span>Doctoral Student Program of the Young S&T Talents Cultivation Project, CAST (中国科协青年科技人才培育工程博士生专项计划)</span>
+    </li>
+    <li>
+      <span class="award-year">2025</span>
+      <span>Excellence Award, Science Experiment Design Innovation Competition, CMC (军委装备发展部科学试验设计创新大赛优胜奖)</span>
+    </li>
+    <li>
+      <span class="award-year">2024</span>
+      <span>National Scholarship for Doctoral Students (博士研究生国家奖学金)</span>
+    </li>
   </ul>
 
   <!-- 学术兼职与服务 -->
