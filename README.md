@@ -1,1 +1,1 @@
-# Kaichen-Chi.github.io
+# chi-kaichen.github.io
