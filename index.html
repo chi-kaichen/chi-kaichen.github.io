@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的名字 (Your Name) - 个人主页</title>
+  <style>
+    body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
+    a { color: #0056b3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 25px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
+    .profile-img { width: 160px; height: 200px; object-fit: cover; border-radius: 4px; margin-right: 30px; }
+    .profile-info { flex: 1; min-width: 280px; }
+    .profile-info h1 { margin: 0 0 10px 0; font-size: 28px; }
+    .nav-links { margin: 15px 0; font-weight: bold; }
+    .nav-links a { margin-right: 12px; }
+    h2 { border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-top: 35px; color: #111; font-size: 22px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .pub-title { font-weight: bold; }
+    .pub-author { color: #555; }
+    .pub-journal { font-style: italic; color: #0056b3; }
+    .badge { background: #eef4ff; color: #0056b3; border: 1px solid #cce0ff; padding: 2px 6px; border-radius: 3px; font-size: 12px; margin-left: 5px; }
+    .top-link { float: right; font-size: 12px; }
+    footer { margin-top: 50px; padding-top: 15px; border-top: 1px solid #ddd; font-size: 13px; color: #777; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- 头部个人信息栏 -->
+  <div class="header">
+    <img src="profile.jpg" alt="Photo" class="profile-img">
+    <div class="profile-info">
+      <h1>你的中文名 (Your Name)</h1>
+      <p>博士 / 博士后研究员</p>
+      <p>某某大学 某某学院 / 研究所</p>
+      <p>地址：中国 某某省 某某市 某某路XX号 (邮编: 000000)</p>
+      <p>Email: <a href="mailto:your_email@domain.com">your_email@domain.com</a></p>
+      
+      <!-- 快捷导航 -->
+      <div class="nav-links">
+        <a href="#experience">Experience</a> | 
+        <a href="#education">Education</a> | 
+        <a href="#research">Research</a> | 
+        <a href="#publications">Publications</a> | 
+        <a href="#awards">Honors</a> | 
+        <a href="#activities">Activities</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 经历 -->
+  <h2 id="experience">Experience <a href="#" class="top-link">[↑TOP]</a></h2>
+  <ul>
+    <li><b>07/2026 - Present</b> | 博士后研究员, 某某大学</li>
+    <li><b>09/2023 - 06/2026</b> | 研究助理 / 实习生, 某某科研机构</li>
+  </ul>
+
+  <!-- 教育背景 -->
+  <h2 id="education">Education <a href="#" class="top-link">[↑TOP]</a></h2>
+  <ul>
+    <li><b>09/2021 - 06/2026</b> | 工学博士, 电子信息 / 计算机科学, 某某大学</li>
+    <li><b>09/2017 - 06/2021</b> | 工学学士, 电子信息工程, 某某大学</li>
+  </ul>
+
+  <!-- 研究方向 -->
+  <h2 id="research">Research Interests <a href="#" class="top-link">[↑TOP]</a></h2>
+  <p>遥感图像处理 (Remote Sensing Image Restoration)、多模态大语言模型 (Multimodal LLMs)、图像去阴影与增强、计算机视觉 (Computer Vision)。</p>
+
+  <!-- 发表论文 -->
+  <h2 id="publications">Publications <a href="#" class="top-link">[↑TOP]</a></h2>
+  <h3>Journal Publications</h3>
+  <ol>
+    <li>
+      <span class="pub-author"><b>Your Name*</b>, Author B, Author C.</span><br>
+      <span class="pub-title">Paper Title Example for Remote Sensing Image Processing.</span><br>
+      <span class="pub-journal">IEEE Transactions on Geoscience and Remote Sensing (T-GRS)</span>, 2026. 
+      <a href="#" class="badge">Code</a> <a href="#" class="badge">PDF</a>
+    </li>
+  </ol>
+
+  <h3>Conference Publications</h3>
+  <ol>
+    <li>
+      <span class="pub-author">Author A, <b>Your Name*</b>, Author C.</span><br>
+      <span class="pub-title">A Novel Multimodal Network for Vision Tasks.</span><br>
+      <span class="pub-journal">Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</span>, 2025.
+      <a href="#" class="badge">Project</a>
+    </li>
+  </ol>
+
+  <!-- 荣誉与奖项 -->
+  <h2 id="awards">Honors and Awards <a href="#" class="top-link">[↑TOP]</a></h2>
+  <ul>
+    <li><b>2026</b> | 优秀博士学位论文奖</li>
+    <li><b>2025</b> | 国家奖学金 (National Scholarship)</li>
+  </ul>
+
+  <!-- 学术兼职与服务 -->
+  <h2 id="activities">Academic Activities <a href="#" class="top-link">[↑TOP]</a></h2>
+  <p><b>Guest Editor / Chair:</b></p>
+  <ul>
+    <li>Guest Editor, <i>Remote Sensing</i> (Special Issue)</li>
+  </ul>
+  <p><b>Journal & Conference Reviewer:</b></p>
+  <ul>
+    <li>IEEE T-IP, IEEE T-GRS, IEEE T-MM, CVPR, NeurIPS, ECCV</li>
+  </ul>
+
+  <footer>
+    Last updated: August 2026
+  </footer>
+</body>
+</html>
